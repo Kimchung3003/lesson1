@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+.text-primary {
+  color: rgb(236, 155, 168);
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 1rem;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  padding: 0.75rem;
+  color: white;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: rgb(236, 155, 168);
+  border-radius: 5px;
+}
+
+/*showcase*/
+
+#showcase {
+  background: rgb(138, 134, 134) url("../img/img1.jpg") no-repeat center
+    center/cover;
+
+  height: 100vh;
+  color: white;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2rem;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  top: 65px;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0rem;
+  line-height: 1.5;
+}
+
+.lead {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  background-color: rgb(236, 155, 168);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn:hover {
+  background-color: rgb(209, 135, 147);
+}
+
+/*utility class*/
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  line-height: 1.5;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background-color: rgb(236, 155, 168);
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Who We Are*/
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-image {
+  background: url("../img/img2.jpg") no-repeat center center/cover;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: white;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.list {
+  margin: 0.5rem;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/*clients*/
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+  border-radius: 15px;
+}
+
+/*contact*/
+.py-2 {
+  padding: 2rem 0;
+}
+
+.bg-primary {
+  background-color: rgb(236, 155, 168);
+  color: #fff;
+}
+
+#contact {
+  display: flex;
+}
+
+#contact .map {
+  flex: 1;
+}
+#contact .contact-form {
+  flex: 1;
+  padding: 0 1rem;
+  border-radius: 15px;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
